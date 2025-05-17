@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pak Earning App - Wallet</title>
+  <link rel="icon" type="img" href="/assessts/img/logo.jpg">
+
+
+    <!-- CSS - STYLING  -->
+    <link rel="stylesheet" href="/assessts/css/style.css">
+
+    <!-- BOX-ICONS  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+
+<body data-theme="light">
+    <!-- LOGIN-SCREEN  -->
+
+    <header>
+        <div class="logo">Pak Earning App</div>
+
+        <div class="nav-icons">
+            <button class="icon-btn menu-toggle" id="menuToggle">
+                <i class="bx bx-menu-alt-right"></i>
+            </button>
+        </div>
+
+        <nav id="navLinks">
+            <a href="/home-page.html">Home</a>
+            <a href="/about-page.html">About</a>
+            <a href="/help-page.html">Help</a>
+
+            <button class="icon-btn" id="themeToggle">
+                <i class='bx bx-moon'></i>
+            </button>
+        </nav>
+
+
+    </header>
+
+    <!-- Wallet -->
+
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <a href="/dashboard.html"><i class='bx bx-home'></i> Dashboard</a>
+            <a href="/watch-ads.html"><i class='bx bx-video'></i> Watch Ads</a>
+            <a href="/wallet.html"><i class='bx bx-wallet'></i> Wallet</a>
+            <a href="/withdraw.html"><i class='bx bx-money-withdraw'></i> Withdraw</a>
+            <a href="/profile.html"><i class='bx bx-user'></i> Profile</a>
+            <a href="referral.html"><i class='bx bx-gift'></i> Referral</a>
+            <button class="theme-sidebar-toggle" id="themeToggleSidebar"><i class='bx bx-moon'></i> Theme</button>
+            <button class="logout-btn" onclick="window.open('/login.html')"><i class='bx bx-log-out'></i> Logout</button>
+
+
+        </aside>
+
+        <main class="main">
+
+            <h1 class="wallet-heading">💰 Wallet Overview</h1>
+            <section class="wallet-section">
+                <div class="balance-card">
+                    <div>
+                        <h2><i class='bx bx-wallet'></i> Current Balance</h2>
+                        <div class="amount" id="balance">$0</div>
+                        <div class="action-buttons">
+                            <button class="btn-deposit" onclick="window.open('/withdraw.html')">Deposit</button>
+                            <button class="btn-deposit" onclick="window.open('/withdraw.html')">Withdraw</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="summary-badges">
+                    <div class="badge">
+                        <h3>Total Earned</h3>
+                        <p>$1000</p>
+                    </div>
+                    <div class="badge">
+                        <h3>Total Withdrawn</h3>
+                        <p>$400</p>
+                    </div>
+                    <div class="badge">
+                        <h3>Pending Withdrawals</h3>
+                        <p>$100</p>
+                    </div>
+                </div>
+
+                <!-- Graph Section -->
+                <div class="chart-container">
+                    <canvas id="walletChart"></canvas>
+                  </div>
+
+                <!-- <canvas id="earningsChart" height="100"></canvas> -->
+
+                <div class="transaction-table">
+                    <h2 style="margin: 1.5rem 0 0.5rem;">🧾 Transaction History</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Type</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2025-05-01</td>
+                                <td class="type-icon earn"><i class='bx bx-coin'></i> Earn</td>
+                                <td>+ $50</td>
+                            </tr>
+                            <tr>
+                                <td>2025-04-30</td>
+                                <td class="type-icon withdraw"><i class='bx bx-money-withdraw'></i> Withdraw</td>
+                                <td>- $100</td>
+                            </tr>
+                            <tr>
+                                <td>2025-04-29</td>
+                                <td class="type-icon earn"><i class='bx bx-coin'></i> Earn</td>
+                                <td>+ $100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+
+
+
+
+
+    <!-- JS-LINK  -->
+    <script src="/assessts/js/script.js"></script>
+    <script src="/assessts/js/wallet.js"></script>
+</body>
+
+</html>

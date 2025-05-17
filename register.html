@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pak Earning App - Register</title>
+  <link rel="icon" type="img" href="/assessts/img/logo.jpg">
+
+
+  <!-- CSS - STYLING  -->
+  <link rel="stylesheet" href="/assessts/css/style.css">
+
+  <!-- BOX-ICONS  -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body data-theme="light">
+  <!-- Register-SCREEN  -->
+
+  <header>
+    <div class="logo">Pak Earning App</div>
+
+    <div class="nav-icons">
+      <button class="icon-btn menu-toggle " id="login-menuToggle">
+        <i class="bx bx-menu-alt-right"></i>
+      </button>
+    </div>
+
+    <nav id="navLinks">
+      <a href="/home-page.html">Home</a>
+      <a href="/about-page.html">About</a>
+      <a href="/help-page.html">Help</a>
+
+      <button class="icon-btn" onclick="toggleTheme()" id="login-themeToggle">
+        <i class='bx bx-moon'></i>
+      </button>
+     
+    </nav>
+
+
+  </header>
+
+  <section class="login-container">
+    <h2>Create Your Account</h2>
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email">
+    <input type="tel" placeholder="Mobile Number">
+    <input type="password" placeholder="Password">
+    <input type="text" placeholder="Referral Code (optional)">
+    <button type="submit" onclick="window.open('/login.html')">Register</button>
+    <p class="register-link">Already have an account? <a href="/login.html">Login Here</a></div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- JS-LINK  -->
+  <script src="/assessts/js/login&register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pak Earning App - Edit Profile</title>
+    <link rel="icon" type="img" href="/assessts/img/logo.jpg">
+
+
+    <!-- CSS - STYLING  -->
+    <link rel="stylesheet" href="/assessts/css/style.css">
+
+    <!-- BOX-ICONS  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body data-theme="light">
+    <!-- LOGIN-SCREEN  -->
+
+    <header>
+        <div class="logo">Pak Earning App</div>
+
+        <div class="nav-icons">
+            <button class="icon-btn menu-toggle" id="menuToggle">
+                <i class="bx bx-menu-alt-right"></i>
+            </button>
+        </div>
+
+        <nav id="navLinks">
+            <a href="/home-page.html">Home</a>
+            <a href="/about-page.html">About</a>
+            <a href="/help-page.html">Help</a>
+
+            <button class="icon-btn" id="themeToggle">
+                <i class='bx bx-moon'></i>
+            </button>
+        </nav>
+
+
+    </header>
+
+    <!-- DashBoard -->
+
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <a href="/dashboard.html"><i class='bx bx-home'></i> Dashboard</a>
+            <a href="/watch-ads.html"><i class='bx bx-video'></i> Watch Ads</a>
+            <a href="/wallet.html"><i class='bx bx-wallet'></i> Wallet</a>
+            <a href="/withdraw.html"><i class='bx bx-money-withdraw'></i> Withdraw</a>
+            <a href="/profile.html"><i class='bx bx-user'></i> Profile</a>
+            <a href="referral.html"><i class='bx bx-gift'></i> Referral</a>
+            <button class="theme-sidebar-toggle" id="themeToggleSidebar"><i class='bx bx-moon'></i> Theme</button>
+            <button class="logout-btn" onclick="window.open('/login.html')"><i class='bx bx-log-out'></i> Logout</button>
+
+
+
+        </aside>
+
+        <main class="main">
+
+            <h1 class="edit-profile-heading">Edit Profile</h1>
+            <div class="edit-profile-container">
+                <div class="edit-left-panel">
+                    <img src="/assessts/img/Profile Pic.png" alt="Profile" class="edit-profile-avatar" />
+                    <div class="edit-profile-name">Aashir Khan</div>
+                    <div class="edit-profile-email">test123@example.com</div>
+                    <div class="edit-profile-phone">+92 300 XXXXXXX</div>
+                </div>
+
+                <div class="edit-right-panel">
+                    <form>
+                        <div class="edit-card-section">
+                            <div class="edit-section-title">Update Information</div>
+                            <label for="name" class="edit-section-label">Full Name:</label>
+                            <input type="text" id="name" value="Aashir Khan" class="edit-input"/>
+
+                            <label for="phone" class="edit-section-label">Phone Number:</label>
+                            <input type="tel" id="phone" value="+92 300 XXXXXXX" class="edit-input" />
+
+                            <button class="save-btn" type="submit">Save Changes</button>
+                        </div>
+
+                        <div class="edit-card-section">
+                            <div class="section-title">Change Password</div>
+                            <label for="password" class="edit-section-label">New Password:</label>
+                            <input type="password" id="password" placeholder="New password" class="edit-input"/>
+
+                            <label for="confirm-password" class="edit-section-label">Confirm Password:</label>
+                            <input type="password" id="confirm-password" placeholder="Confirm new password" class="edit-input"/>
+
+                            <button class="save-btn" type="submit">Update Password</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+
+
+
+
+
+
+    <!-- JS-LINK  -->
+    <script src="/assessts/js/script.js"></script>
+</body>
+
+</html>

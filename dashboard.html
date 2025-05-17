@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pak Earning App - Dashboard</title>
+  <link rel="icon" type="img" href="/assessts/img/logo.jpg">
+
+
+    <!-- CSS - STYLING  -->
+    <link rel="stylesheet" href="/assessts/css/style.css">
+
+    <!-- BOX-ICONS  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body data-theme="light">
+    <!-- LOGIN-SCREEN  -->
+
+    <header>
+        <div class="logo">Pak Earning App</div>
+
+        <div class="nav-icons">
+            <button class="icon-btn menu-toggle" id="menuToggle">
+                <i class="bx bx-menu-alt-right"></i>
+            </button>
+        </div>
+
+        <nav id="navLinks">
+            <a href="/home-page.html">Home</a>
+            <a href="/about-page.html">About</a>
+            <a href="/help-page.html">Help</a>
+
+            <button class="icon-btn" id="themeToggle">
+                <i class='bx bx-moon'></i>
+            </button>
+        </nav>
+
+
+    </header>
+
+    <!-- DashBoard -->
+
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <a href="/dashboard.html"><i class='bx bx-home'></i> Dashboard</a>
+            <a href="/watch-ads.html"><i class='bx bx-video'></i> Watch Ads</a>
+            <a href="/wallet.html"><i class='bx bx-wallet'></i> Wallet</a>
+            <a href="/withdraw.html"><i class='bx bx-money-withdraw'></i> Withdraw</a>
+            <a href="/profile.html"><i class='bx bx-user'></i> Profile</a>
+            <a href="referral.html"><i class='bx bx-gift'></i> Referral</a>
+            <button class="theme-sidebar-toggle" id="themeToggleSidebar"><i class='bx bx-moon'></i> Theme</button>
+            <button class="logout-btn" onclick="window.open('/login.html')"><i class='bx bx-log-out'></i> Logout</button>
+
+
+        </aside>
+
+        <main class="main">
+            <div class="profile-box">
+                <img src="/assessts/img/Profile Pic.png" alt="Profile Picture" onclick="window.open('/profile.html')">
+                <div>
+                    <h2>Aashir Khan</h2>
+                    <p>Total Earnings: $ 8,200</p>
+                </div>
+                <div class="profile-buttons">
+                    <button onclick="window.open('/withdraw.html')">Deposit</button>
+                    <button onclick="window.open('/withdraw.html')">Withdraw</button>
+                </div>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Investment</h3>
+                    <p>$ 5,000</p>
+                </div>
+                <div class="card">
+                    <h3>Total Withdraw</h3>
+                    <p>$ 2,500</p>
+                </div>
+                <div class="card">
+                    <h3>Pending Deposit</h3>
+                    <p>$ 1,000</p>
+                </div>
+                <div class="card">
+                    <h3>Pending Withdraw</h3>
+                    <p>$ 500</p>
+                </div>
+            </div>
+
+            <div class="ads">
+                <h3>Watch Ads</h3>
+                <p>Earn coins by watching ads. You can watch up to 10 ads daily.</p>
+                <button onclick="window.open('/watch-ads.html')">Watch Ad</button>
+            </div>
+
+            <div class="referral">
+                <h3>Share Referral Code</h3>
+                <p>Share your referral code with friends:</p>
+                <div class="referral-icons">
+                    <i class='bx bxl-whatsapp'></i>
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-twitter'></i>
+                </div>
+                <button onclick="window.open('/referral.html')">Invite Friends</button>
+            </div>
+
+            <div class="special-offer">
+                🎁 Refer a VIP user & earn Rs. 100 bonus!
+            </div>
+
+            <div class="transaction-table-wrapper">
+                <h3>Transaction History</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025-04-28</td>
+                            <td>Ad Earning</td>
+                            <td>+10 Coins</td>
+                            <td>Success</td>
+                        </tr>
+                        <tr>
+                            <td>2025-04-27</td>
+                            <td>Withdraw</td>
+                            <td>$ 200</td>
+                            <td>Pending</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+    <!-- JS-LINK  -->
+    <script src="/assessts/js/script.js"></script>
+</body>
+
+</html>

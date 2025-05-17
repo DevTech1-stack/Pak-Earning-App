@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pak Earning App - Referral & Earn</title>
+    <link rel="icon" type="img" href="/assessts/img/logo.jpg">
+
+
+    <!-- CSS - STYLING  -->
+    <link rel="stylesheet" href="/assessts/css/style.css">
+
+    <!-- BOX-ICONS  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body data-theme="light">
+    <!-- LOGIN-SCREEN  -->
+
+    <header>
+        <div class="logo">Pak Earning App</div>
+
+        <div class="nav-icons">
+            <button class="icon-btn menu-toggle" id="menuToggle">
+                <i class="bx bx-menu-alt-right"></i>
+            </button>
+        </div>
+
+        <nav id="navLinks">
+            <a href="/home-page.html">Home</a>
+            <a href="/about-page.html">About</a>
+            <a href="/help-page.html">Help</a>
+
+            <button class="icon-btn" id="themeToggle">
+                <i class='bx bx-moon'></i>
+            </button>
+        </nav>
+
+
+    </header>
+
+    <!-- DashBoard -->
+
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <a href="/dashboard.html"><i class='bx bx-home'></i> Dashboard</a>
+            <a href="/watch-ads.html"><i class='bx bx-video'></i> Watch Ads</a>
+            <a href="/wallet.html"><i class='bx bx-wallet'></i> Wallet</a>
+            <a href="/withdraw.html"><i class='bx bx-money-withdraw'></i> Withdraw</a>
+            <a href="/profile.html"><i class='bx bx-user'></i> Profile</a>
+            <a href="referral.html"><i class='bx bx-gift'></i> Referral</a>
+            <button class="theme-sidebar-toggle" id="themeToggleSidebar"><i class='bx bx-moon'></i> Theme</button>
+            <button class="logout-btn" onclick="window.open('/login.html')"><i class='bx bx-log-out'></i>
+                Logout</button>
+
+
+        </aside>
+
+        <main class="main">
+
+            <h1 class="referral-heading">📢 Refer & Earn</h1>
+
+            <!-- Rewards Breakdown -->
+            <section class="card rewards">
+                <h2>Referral Rewards</h2>
+                <ul>
+                    <li>✅ $10 per successful signup</li>
+                    <li>🎁 Bonus $50 after 5 referrals</li>
+                    <li>🏆 Tier bonuses available for top referrers</li>
+                </ul>
+            </section>
+
+            <!-- Soical Links -->
+
+            <section class="card share">
+                <h2>Share Your Referral Link</h2>
+                <p>Your Link: <code>https://pak-earning-app.com/referral?code=REFAASHIR55</code></p>
+                <div class="social-icons">
+                  <i class='bx bxl-whatsapp'></i>
+                  <i class='bx bxl-facebook'></i>
+                  <i class='bx bxl-twitter'></i>
+                  <i class='bx bxl-instagram'></i>
+                </div>
+              </section>
+
+            <!-- Progress Bar -->
+
+              <section class="card referral-progress-section">
+                <h2>Your Progress</h2>
+                <p id="bonusMessage">🎯 3 more referrals to earn ₹50 bonus</p>
+                <div class="referral-progress-bar">
+                  <div class="referral-progress" id="progressBar"></div>
+                </div>
+                <p><strong><span id="referralCount">2</span> / 5 referrals</strong></p>
+              </section>
+
+            <!-- Leaderboard -->
+
+            <section class="card leaderboard">
+                <h2>Top Referrers This Month</h2>
+                <ul>
+                    <li><span>@rahul</span><span>15 referrals</span></li>
+                    <li><span>@neha</span><span>13 referrals</span></li>
+                    <li><span>@arjun</span><span>11 referrals</span></li>
+                    <li><span>@simran</span><span>10 referrals</span></li>
+                    <li><span>@dev</span><span>8 referrals</span></li>
+                </ul>
+            </section>
+
+            <!-- FAQs -->
+
+            <section class="card faqs">
+                <h2>Referral FAQs</h2>
+                <details>
+                    <summary>When do I get the reward?</summary>
+                    <p>Within 24 hours of your friend signing up and completing their first action.</p>
+                </details>
+                <details>
+                    <summary>What if my friend doesn’t use the code?</summary>
+                    <p>You won't receive the reward unless the referral code is used during signup.</p>
+                </details>
+                <details>
+                    <summary>Can I refer more than 5 people?</summary>
+                    <p>Yes! You'll keep earning $10 per referral and qualify for more bonuses.</p>
+                </details>
+            </section>
+
+    </div>
+
+    </main>
+    </div>
+
+
+
+
+
+
+    <!-- JS-LINK  -->
+    <script src="/assessts/js/referral.js"></script>
+    <script src="/assessts/js/script.js"></script>
+</body>
+
+</html>

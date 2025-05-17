@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pak Earning App - Watch Ads</title>
+  <link rel="icon" type="img" href="/assessts/img/logo.jpg">
+
+
+    <!-- CSS - STYLING  -->
+    <link rel="stylesheet" href="/assessts/css/style.css">
+
+    <!-- BOX-ICONS  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body data-theme="light">
+    <!-- LOGIN-SCREEN  -->
+
+    <header>
+        <div class="logo">Pak Earning App</div>
+
+        <div class="nav-icons">
+            <button class="icon-btn menu-toggle" id="menuToggle">
+                <i class="bx bx-menu-alt-right"></i>
+            </button>
+        </div>
+
+        <nav id="navLinks">
+            <a href="/home-page.html">Home</a>
+            <a href="/about-page.html">About</a>
+            <a href="/help-page.html">Help</a>
+
+            <button class="icon-btn" id="themeToggle">
+                <i class='bx bx-moon'></i>
+            </button>
+        </nav>
+
+
+    </header>
+
+    <!-- Watch Ads -->
+
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <a href="/dashboard.html"><i class='bx bx-home'></i> Dashboard</a>
+            <a href="/watch-ads.html"><i class='bx bx-video'></i> Watch Ads</a>
+            <a href="/wallet.html"><i class='bx bx-wallet'></i> Wallet</a>
+            <a href="/withdraw.html"><i class='bx bx-money-withdraw'></i> Withdraw</a>
+            <a href="/profile.html"><i class='bx bx-user'></i> Profile</a>
+            <a href="referral.html"><i class='bx bx-gift'></i> Referral</a>
+            <button class="theme-sidebar-toggle" id="themeToggleSidebar"><i class='bx bx-moon'></i> Theme</button>
+            <button class="logout-btn" onclick="window.open('/login.html')"><i class='bx bx-log-out'></i> Logout</button>
+
+        </aside>
+
+        <main class="main">
+
+            <h1 class="watch-ads-heading">🎬 Watch Ads & Earn Coins</h1>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    📺 Video Ad Placeholder
+                    <div class="progress-timer">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                </div>
+                <button class="earn-btn" id="earnBtn" disabled>Wait for Ad...</button>
+                <div class="coin-animate" id="coinMsg">+10 Coins Earned!</div>
+            </div>
+
+            <div class="progress-bar">
+                <p>Daily Limit Progress</p>
+                <div class="bar">
+                    <div class="bar-fill" id="barFill">20%</div>
+                </div>
+            </div>
+
+            <div class="ad-summary">
+                <div class="summary-box">
+                    <h3>Coins Earned</h3>
+                    <p id="coinsTotal">20</p>
+                </div>
+                <div class="summary-box">
+                    <h3>Ads Watched</h3>
+                    <p id="adsWatched">2</p>
+                </div>
+                <div class="summary-box">
+                    <h3>Ads Remaining</h3>
+                    <p id="adsRemaining">2</p>
+                </div>
+            </div>
+
+            <div class="special-offer">
+                🎁 Refer a VIP user & earn Rs. 100 bonus!
+            </div>
+
+
+        </main>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <!-- JS-LINK  -->
+    <script src="/assessts/js/script.js"></script>
+</body>
+
+</html>

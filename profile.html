@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pak Earning App - Profile</title>
+    <link rel="icon" type="img" href="/assessts/img/logo.jpg">
+
+
+    <!-- CSS - STYLING  -->
+    <link rel="stylesheet" href="/assessts/css/style.css">
+
+    <!-- BOX-ICONS  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body data-theme="light">
+    <!-- LOGIN-SCREEN  -->
+
+    <header>
+        <div class="logo">Pak Earning App</div>
+
+        <div class="nav-icons">
+            <button class="icon-btn menu-toggle" id="menuToggle">
+                <i class="bx bx-menu-alt-right"></i>
+            </button>
+        </div>
+
+        <nav id="navLinks">
+            <a href="/home-page.html">Home</a>
+            <a href="/about-page.html">About</a>
+            <a href="/help-page.html">Help</a>
+
+            <button class="icon-btn" id="themeToggle">
+                <i class='bx bx-moon'></i>
+            </button>
+        </nav>
+
+
+    </header>
+
+    <!-- DashBoard -->
+
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <a href="/dashboard.html"><i class='bx bx-home'></i> Dashboard</a>
+            <a href="/watch-ads.html"><i class='bx bx-video'></i> Watch Ads</a>
+            <a href="/wallet.html"><i class='bx bx-wallet'></i> Wallet</a>
+            <a href="/withdraw.html"><i class='bx bx-money-withdraw'></i> Withdraw</a>
+            <a href="/profile.html"><i class='bx bx-user'></i> Profile</a>
+            <a href="referral.html"><i class='bx bx-gift'></i> Referral</a>
+            <button class="theme-sidebar-toggle" id="themeToggleSidebar"><i class='bx bx-moon'></i> Theme</button>
+            <button class="logout-btn" onclick="window.open('/login.html')"><i class='bx bx-log-out'></i> Logout</button>
+
+
+        </aside>
+
+        <main class="main">
+            <h1 class="profile-heading">👤 Profile</h1>
+            <div class="profile-container">
+                <div class="left-panel">
+                    <img src="/assessts/img/Profile Pic.png" alt="Profile" class="profile-avatar" />
+                    <div class="profile-name">Aashir Khan</div>
+                    <div class="profile-email">test123@example.com</div>
+                    <div class="profile-phone">+92 300 XXXXXXX</div>
+                    <button class="profile-btn" onclick="window.open('/edit-profile.html')">Edit Profile</button>
+                    <button class="profile-btn" onclick="window.open('/login.html')">Logout</button>
+                </div>
+
+                <div class="right-panel">
+                    <div class="card-section">
+                        <div class="section-title">Account Details</div>
+                        <div class="section-item"><span class="section-label">User ID:</span> #PAK12345</div>
+                        <div class="section-item"><span class="section-label">Referral Code:</span> REFAASHIR55</div>
+                        <div class="section-item"><span class="section-label">Joined:</span> 10 Feb 2024</div>
+                    </div>
+
+                    <div class="card-section">
+                        <div class="section-title">Security</div>
+                        <div class="section-item">
+                            <span class="section-label">Password:</span> ••••••••
+                            <button class="btn"
+                                style="margin-left: 1rem; padding: 0.4rem 1rem; font-size: 0.85rem; cursor: pointer;"
+                                onclick="window.open('/edit-profile.html')">Change</button>
+                        </div>
+                        <div class="section-item"><span class="section-label">2FA:</span> Coming Soon</div>
+                    </div>
+
+                    <div class="card-section">
+                        <div class="section-title">Preferences</div>
+                        <div class="section-item">
+                            <label><input type="checkbox" checked /> Enable Notifications</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+    <!-- JS-LINK  -->
+    <script src="/assessts/js/script.js"></script>
+</body>
+
+</html>
